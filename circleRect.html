@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collision between circle and rectangle</title>
+</head>
+
+<body>
+    <canvas id="my-canvas" width="500" height="400" style="border: 3px solid blue"></canvas>
+    <script src="circleRect.js"></script>
+</body>
+
+</html>
+<script>
+    let circle = new RectCircle(50, 50, 20, 0, 2 * Math.PI);
+    circle.drawCircle("my-canvas");
+    let rect = new RectCircle(60, 60, 150, 100);
+    rect.drawRect("my-canvas");
+    console.log(circle.isCollisionRect(rect));
+</script>

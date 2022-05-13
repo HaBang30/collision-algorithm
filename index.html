@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collision algorithm</title>
+</head>
+
+<body>
+    <canvas id="my-canvas" width="500" height="300" style="border: 2px solid red"></canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
+<script>
+    let rect1 = new Rect(10, 10, 100, 70);
+    rect1.drawRect("my-canvas");
+    let rect2 = new Rect(109, 79, 100, 70);
+    rect2.drawRect("my-canvas");
+    console.log(rect1.isCollision(rect2));
+</script>
